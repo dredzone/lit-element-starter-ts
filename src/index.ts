@@ -86,4 +86,9 @@ const routes: Route[] = [
 
 const outlet = document.getElementById('outlet');
 export const router = new Router(outlet);
-router.setRoutes(routes);
+router
+  .setRoutes(routes)
+  .then()
+  .catch(err => {
+    // error
+  });
